@@ -102,7 +102,7 @@ async def start_command(client: Client, message: Message):
         return
     else:
         reply_markup = InlineKeyboardMarkup(
-            [ [ InlineKeyboardButton("Main Channel", url="https://t.me/Anime_Tron"), 
+            [ [ InlineKeyboardButton("Main Channel", url="https://t.me/KissAnime_Seasonal"), 
               InlineKeyboardButton("Source Code",url="https://t.me/+NeqCUg-QDxo2Nzll") 
               ],[InlineKeyboardButton("Bot Channel",url="https://t.me/publicfille")],
                 [
