@@ -20,7 +20,7 @@ DB_URL = os.environ.get("DB_URL", "mongodb+srv://hamzann:hamza00@cluster0.id2lo.
 DB_NAME = os.environ.get("DB_NAME", "TA_Links_Bot")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002149354979"))
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002177309175"))
 FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002146121321"))
 
