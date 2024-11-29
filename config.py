@@ -14,8 +14,8 @@ APP_ID = int(os.environ.get("APP_ID", "24371796"))
 API_HASH = os.environ.get("API_HASH", "8121c78f4b8b31e88cc2623d1277338d")
 
 
-OWNER = os.environ.get("OWNER", "5405110137") #Owner username
-OWNER_ID = int(os.environ.get("OWNER_ID", "God_Of_Genjutsue")) #Owner user id
+OWNER = os.environ.get("OWNER", "God_Of_Genjutsue") #Owner username
+OWNER_ID = int(os.environ.get("OWNER_ID", "5405110137")) #Owner user id
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://hamzann:hamza00@cluster0.id2lo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "TA_Links_Bot")
 
