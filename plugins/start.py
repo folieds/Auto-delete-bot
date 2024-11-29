@@ -102,7 +102,7 @@ async def start_command(client: Client, message: Message):
         return
     else:
         reply_markup = InlineKeyboardMarkup(
-            [ 
+            [ [
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
