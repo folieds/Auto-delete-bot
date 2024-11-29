@@ -93,7 +93,7 @@ async def start_command(client: Client, message: Message):
 
             except:
                 pass
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis video / file will be deleted in 10 minutes (Due to copyright issues).\n\n📌 Please forward this video / file to somewhere else and start downloading there.\n\n 👨‍💻 Devloper @ifeelscam ")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b><blockquote>❗️ <u>IMPORTANT</u> ❗️</blockquote>\n\nThis video / file will be deleted in 20 minutes (Due to copyright issues).\n\n📌 Please forward this video / file to somewhere else and start downloading there.</b>")
         await asyncio.sleep(SECONDS)
         await f.delete()
         await k.edit_text("Your video / file is successfully deleted !")
@@ -102,11 +102,7 @@ async def start_command(client: Client, message: Message):
         return
     else:
         reply_markup = InlineKeyboardMarkup(
-            [ [ InlineKeyboardButton("Main Channel", url="https://t.me/Tamil_Anime_Files"), 
-              InlineKeyboardButton("Source Code",url="https://t.me/+NeqCUg-QDxo2Nzll") 
-              ],[InlineKeyboardButton("Bot Channel",url="https://t.me/publicfille")],
-                [
-                    InlineKeyboardButton("🤖 About Me", callback_data = "about"),
+            [ 
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
@@ -138,10 +134,10 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    buttons = [  [ InlineKeyboardButton(text="Join Channel", url="https://t.me/Black_Clover_Tamil_Dub_Anime")],
+    buttons = [  
         [
             InlineKeyboardButton(text="Join Channel", url=client.invitelink),
-            InlineKeyboardButton(text="Join Channel", url=client.invitelink2),
+           
         ]
     ]
     try:
