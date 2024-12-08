@@ -35,7 +35,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 
-START_MSG = os.environ.get("START_MESSAGE", "👋🏻 Hey {mention}\n\nI Am Tamil Anime File Store Bot 🍀\nHere You Get All Tamil Animes @TA_Links🍂.")
+START_MSG = os.environ.get("START_MESSAGE", "<b>👋🏻 Hey {mention}\n\nI Am Tamil Anime File Store Bot 🍀\nHere You Get All Tamil Animes @TA_Links🍂.</b>")
 
 try:
     ADMINS=[7085541484]
@@ -45,7 +45,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel to use me\n\nKindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You need to join in my Channel to use me\n\nKindly Please join Channel</b>")
 
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
