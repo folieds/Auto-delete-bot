@@ -138,8 +138,8 @@ async def not_joined(client: Client, message: Message):
     buttons = [  
         [
             InlineKeyboardButton(text="Join Channel", url=client.invitelink),
-           InlineKeyboardButton("Join Channel", url = "https://t.me/tgstarsfreee_bot?start=6076683960")
-        ],[ InlineKeyboardButton("Join Channel", url = "https://t.me/TA_Links_Bot?start=Z2V0LTMyMTY4OTk0Mjk0ODI1OQ")]
+           InlineKeyboardButton("Join Channel", url = "t.me/offchats")
+        ]
     ]
     try:
         buttons.append(
